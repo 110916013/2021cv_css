@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江英碩的個人簡歷</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+    $(function() {
+      var $win = $(window);
+      var $backToTop = $('.js-back-to-top');
+      $win.scroll(function() {
+        if ($win.scrollTop() > 100) {
+          $backToTop.show();
+        } else {
+          $backToTop.hide();
+        }
+      });
+      $backToTop.click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 200);
+      });
+    });
+   </script>
+</head>
+<body>
+  
+    <div class="top-container">
+        <div class="title-text">
+          <div class=title>Welcome to Kevin's Website</div>
+          <br>
+          <span class="secondtitle">歡迎來到英碩的個人網站</span>
+        </div>
+          <img class="mountain" src="" alt="">
+    </div>
+      
+      <div class="middle-container">
+        <div class="profile">
+          <h2>個人簡介</h2>
+          <img class="profile" width=30% src="images\kevin.png" alt="個人照片">
+          <p><strong>江英碩</strong></p>
+          <p>性別:男</p>
+          <p>生日:90/11/25</p>
+          <p><strong>"</strong>我是一名大學生，目前就讀國立台北教育大學，</p>
+          <p></p>我的個性活潑開朗，也善於思考、解決問題<strong>"</strong></p>
+          
+          
+          
+        </div>
+        <br>
+        <div class="skills">
+          <h2>我的嗜好</h2>
+          <div class="skill-row">
+            <img class="" width=20% src="images\hobby.png" alt="">
+            <h3>運動</h3>
+            <p>平常喜歡打籃球、羽球，偶而也會健身</p>
+            <h3>嗜好</h3>
+            <p>閱讀英文小說、看電影、打電動是我的日常生活</p>
+
+            <P><a class="a1" href="hobby.html">更多資訊></a></P>
+
+          </div>
+          <div class="skill-row">
+            <h2>學歷</h2>
+            <img class="" width=20% src="images\education.png" alt="">
+            <p><strong>國立台北教育大學-資訊科學系</strong></p>
+            <p>新店高級中學</p>
+            <p>大安國民中學</p>
+
+          </div>
+          <h2>工作技能</h2>
+          <div class="skill-row">
+            <img class="" width=20% src="images\working.png" alt="">
+            <h3>C++</h3>
+            <h3>Python</h3>
+            <h3>Java</h3>
+            <h3>英語會話</h3>
+
+            <P><a class="a1" href="work.html">更多資訊></a></P>
+            <br>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>聯絡資訊</h2>
+          <h3>電話:0968-123-456</h3>
+          <h3>地址:10671台北市大安區和平東路二段134號</h3>
+          <br>
+          <a class="btn" href="contact.html">前往聯絡頁面</a>
+          
+        </div>
+      </div>
+      <div class="goTop">
+        <a href="#" class="goTopBtn jq-goTop">
+          <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
+        </a>
+      </div>
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.Instagram.com/">Instagram</a>
+        <a class="footer-link" href="https://facebook.com/">Facebook</a>
+        <a class="footer-link" href="https://www.ntue.edu.tw/">Line</a>
+        <p style="color:rgb(124, 209, 184)">© 2021 Kevin Chiang.</p>
+      </div>
+      <div id="gotop"><button class="js-back-to-top back-to-top" title=回到頂端">︽</button></div>
+</body>
+</html>

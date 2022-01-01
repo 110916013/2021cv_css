@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css\contact.css">
+    <link rel="icon" href="favicon.ico">
+    <script>
+        function myFunction()
+        {
+            alert("您的訊息已送出!");
+        }
+        </script>
+        <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+        $(function() {
+          var $win = $(window);
+          var $backToTop = $('.js-back-to-top');
+          $win.scroll(function() {
+            if ($win.scrollTop() > 100) {
+              $backToTop.show();
+            } else {
+              $backToTop.hide();
+            }
+          });
+          $backToTop.click(function() {
+            $('html, body').animate({
+              scrollTop: 0
+            }, 200);
+          });
+        });
+       </script>
+
+</head>
+<body>
+    <div class="top-container">
+        <div class=title>我的連絡資訊</div>
+        <br>
+    </div>
+
+    <div class="middle-container">
+        <br>
+        <h2>住址</h2>
+        <h3>10671台北市大安區和平東路二段134號</h3>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.786702924485!2d121.54265965399554!3d25.022226864022684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa2f16457755%3A0x3f338786a73bdb27!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5ZKM5bmz5p2x6Lev5LqM5q61MTM06Jmf5rqr5rC05ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1640974387984!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h2>連絡電話</h2>
+        <h3>0968-123-456</h3>
+        <h2>留言板</h2>
+        <form action="">
+            <label>您的姓名:</label>
+            <input type="text">
+            <br>
+            <label>您的Email:</label>
+            <input type="email"><br>
+            <label>您要註冊電子郵件嗎?</label>
+            <input type="checkbox"><br>
+            <br>
+            <label>請輸入您的留言:</label>
+            <br>
+            <textarea name="" id="" cols="40" rows="10"></textarea><br>
+            <br>
+            <input type="color">
+            <input type="range">
+            <br><br>
+            <input type="button" onclick="myFunction()" value="提交">
+        </form>
+        <br><br>
+        <a class="btn" href="index.html">回首頁</a>
+    </div>
+
+
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.Instagram.com/">Instagram</a>
+        <a class="footer-link" href="https://facebook.com/">Facebook</a>
+        <a class="footer-link" href="https://www.ntue.edu.tw/">Line</a>
+        <p style="color:rgb(124, 209, 184)">© 2021 Kevin Chiang.</p>
+    </div>
+    <div id="gotop"><button class="js-back-to-top back-to-top" title=回到頂端">︽</button></div>
+</body>
+</html>

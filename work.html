@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+    <link rel="stylesheet" href="css\work.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+    $(function() {
+      var $win = $(window);
+      var $backToTop = $('.js-back-to-top');
+      $win.scroll(function() {
+        if ($win.scrollTop() > 100) {
+          $backToTop.show();
+        } else {
+          $backToTop.hide();
+        }
+      });
+      $backToTop.click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 200);
+      });
+    });
+   </script>
+</head>
+<body>
+    <div class="top-container">
+        <div class=title>工作技能</div>
+        <br>
+    </div>
+
+    <div class="middle-container">
+
+        <br>
+        <h2>能力評估</h2>
+        <table class="table">
+            <tr>
+                <td>Java</td>
+                <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>英語會話</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            </table>
+        <h3>Java</h3>
+        <img class="" width=20% src="images\java.png" alt="Java">
+        <p>Java是一種廣泛使用的電腦程式設計語言，擁有跨平台、物件導向、泛型程式設計的特性，廣泛應用於企業級Web應用開發和行動應用開發。
+            Java 是首屈一指的程式設計語言和開發平台。它可降低成本、縮短開發時間、推動創新並改善應用程式服務。在全球有數百萬開發人員執行超過 510 億部 Java Virtual Machine 的情況下，Java 仍是企業和開發人員的首選開發平台。
+            我在求學期間撰寫了許多Java程式，並精通其語法，期望在未來工作能夠更加活用它。</p>
+        <h3>C++</h3>
+        <img class="" width=20% src="images\C++.png" alt="C++">
+        <p>C++是一種被廣泛使用的電腦程式設計語言。它是一種通用程式設計語言，支援多重程式設計範式，例如過程化程式設計、資料抽象化、物件導向程式設計、泛型程式設計和設計模式等。
+            和C語言相比，C++引入了更多的特性，包括：複合型別（參照類型等）、const限定符和constexpr常數表達式、型別處理運算子（型別別名及auto和decltype等多種型別指示符）、C++標準庫（IO庫與多種容器類）等。
+            我在求學期間撰寫了許多Java程式，並精通其語法，期望在未來工作能夠更加活用它。
+        </p>
+        <h3>Python</h3>
+        <img class="" width=20% src="images\python.png" alt="Python">
+        <p>Python是一種廣泛使用的直譯式、進階和通用的程式語言。Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計。它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，並且其本身擁有一個巨大而廣泛的標準庫。它的語言結構以及物件導向的方法旨在幫助程式設計師為小型的和大型的專案編寫清晰的、合乎邏輯的程式碼
+            我在求學期間撰寫了許多Java程式，並精通其語法，期望在未來工作能夠更加活用它。
+        </p>
+        <h2>工作經驗</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Dates</th>
+                    <th>Work</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>2020</td>
+                <td>某迴轉壽司店餐廳工讀生</td>
+            </tr>
+            <tr>
+                <td>2021-迄今</td>
+                <td>國立台北教育大學 圖書館工讀生</td>
+            </tr>
+            </table>
+            <br><br>
+            <a class="btn" href="index.html">回首頁</a>
+    </div>
+
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.Instagram.com/">Instagram</a>
+        <a class="footer-link" href="https://facebook.com/">Facebook</a>
+        <a class="footer-link" href="https://www.ntue.edu.tw/">Line</a>
+        <p style="color:rgb(124, 209, 184)">© 2021 Kevin Chiang.</p>
+    </div>
+    <div id="gotop"><button class="js-back-to-top back-to-top" title=回到頂端">︽</button></div>
+</body>
+</html>

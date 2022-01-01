@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hobby</title>
+    <link rel="stylesheet" href="css\hobby.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+    $(function() {
+      var $win = $(window);
+      var $backToTop = $('.js-back-to-top');
+      $win.scroll(function() {
+        if ($win.scrollTop() > 100) {
+          $backToTop.show();
+        } else {
+          $backToTop.hide();
+        }
+      });
+      $backToTop.click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 200);
+      });
+    });
+   </script>
+</head>
+<body>
+    <div class="top-container">
+        <div class=title>我的嗜好</div>
+        <br>
+    </div>
+        
+    <div class="middle-container">
+        <h2>我喜歡的運動</h2>
+        <h3>籃球</h3>
+        <img class="" width=30% src="images\basketball.jpg" alt="basketball">
+        <h3>羽球</h3>
+        <img class="" width=30% src="images\badminton.jpg" alt="badminton">
+        <h3>桌球</h3>
+        <img class="" width=30% src="images\tabletennis.jpg" alt="badminton">
+        <h2>我喜歡的休閒活動</h2>
+        <h3>閱讀小說</h3>
+        <img class="" width=30% src="images\novel.jpg" alt="novel">
+        <h3>看電影</h3>
+        <img class="" width=30% src="images\movie.jpg" alt="movie">
+        <br>
+        <br>
+        <a class="btn" href="index.html">回首頁</a>
+    </div>
+
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.Instagram.com/">Instagram</a>
+        <a class="footer-link" href="https://facebook.com/">Facebook</a>
+        <a class="footer-link" href="https://www.ntue.edu.tw/">Line</a>
+        <p style="color:rgb(124, 209, 184)">© 2021 Kevin Chiang.</p>
+    </div>
+    <div id="gotop"><button class="js-back-to-top back-to-top" title=回到頂端">︽</button></div>
+</body>
+</html>
